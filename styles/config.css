@@ -1,0 +1,37 @@
+/* QuickSand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Personalização padrão */
+:root{
+    --black:#1A1A1A;
+    --white:#F8F9FA;
+    --transparent-b:rgba(0, 0, 0, 0.65);
+    --transparent-w:rgba(255, 255, 255, 0.65);
+    --pink1:#E27396;
+    --pink2:#EA9AB2;
+    --pink3:#FCD2EE;
+
+    --normal-font: 'Lato', Arial, sans-serif;
+    --fantasy-font: 'bernadette', Arial, Helvetica, sans-serif;
+}
+
+
+/* Efeitos de Hover*/
+
+/* Scale */
+.scale-hover{
+    transition: 0.3s;
+}
+
+.scale-hover:hover{
+    transform: scale(1.1);
+}
