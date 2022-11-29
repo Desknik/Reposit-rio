@@ -1,5 +1,9 @@
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* QuickSand */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 
 /* Reset */
 *{
@@ -8,25 +12,30 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: var(--white);
 }
 
 /* Personalização padrão */
 :root{
-    --black:#1A1A1A;
-    --white:#F8F9FA;
-    --transparent-b:rgba(0, 0, 0, 0.65);
-    --transparent-w:rgba(255, 255, 255, 0.65);
-    --pink1:#E27396;
-    --pink2:#EA9AB2;
-    --pink3:#FCD2EE;
+    --black:#0F111A;
+    --white:#EAE8FF;
+    --primary:#BD1F36;
+    --secundary:#0F1120;
 
-    --normal-font: 'Lato', Arial, sans-serif;
-    --fantasy-font: 'bernadette', Arial, Helvetica, sans-serif;
+    --normal-font: 'Poppins', Arial, sans-serif;
+    --secundary-font: 'Quicksand', Arial, sans-serif;;
 }
 
 
-/* Efeitos de Hover*/
+/* Css*/
 
+/* Body */
+body{
+    background-color: var(--secundary) !important;
+}
+
+/* Hover */
 /* Scale */
 .scale-hover{
     transition: 0.3s;
@@ -35,3 +44,14 @@
 .scale-hover:hover{
     transform: scale(1.1);
 }
+
+/* Glass */
+.glass{
+    background: rgba(0, 0, 0, 0.33);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
+    border: 1px solid rgba(49, 49, 49, 0.33);
+}
+
+/* box-shadow: rgb(70, 26, 26) 0px 0px 24px; */

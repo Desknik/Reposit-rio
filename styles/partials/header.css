@@ -1,0 +1,186 @@
+header{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 50px;
+}
+
+header nav{
+    justify-content: flex-end !important;
+}
+
+header nav .config{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+header nav .config i{
+    font-size: 1.5em;
+    color: var(--primary);
+}
+
+/* Aside */
+
+aside{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 50px;
+    height: auto;
+    transition: all 0.3s;
+    border-bottom-right-radius:20px;
+}
+
+aside .toggle{
+    position: absolute;
+    top: 5px;
+    right: -10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 18px;
+    height: 18px;
+
+    font-size: 13px;
+    color: var(--black) !important;
+
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--primary);
+}
+
+aside ul{
+    margin: 0;
+}
+
+aside a{
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    margin-left: -3px;
+}
+
+aside .menu-links i{
+    font-size: 2em;
+    color: var(--primary);
+}
+
+aside .desc{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+}
+
+aside.active{
+    width: 150px;
+}
+
+aside a:hover{
+    opacity: 0.8;
+}
+
+aside.active .desc{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Config Modal */
+
+.configbox{
+    position: absolute;
+    top: 80px;
+    right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    width: 200px;
+    height: 50px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    border-radius: 20px 0px 20px 20px;
+}
+
+.configbox.visible{
+    opacity: 1;
+    visibility: visible;;
+}
+
+.configbox span{
+
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--cor);
+}
+
+.configbox span.active{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border: 2px solid var(--white);
+}
+
+.configbox input{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.configbox input::-webkit-color-swatch{ 
+    border-radius: 50%;
+}
+
+.gradient-border {
+    background: #1D1F20;
+    position: relative;
+    border-radius: 50%;
+  }
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    height: 20px;
+    width: 20px;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: 50%;
+    z-index: 1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 200% 200%;
+  }
+  
+  
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
